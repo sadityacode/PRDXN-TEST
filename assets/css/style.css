@@ -113,6 +113,49 @@ li {
   Header styling starts here
 =================================*/
 
+.login-page .wrapper { width: 90%; }
+
+header {
+  width: 100%;
+  padding: 1% 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* login page header styling */
+.login-page header { position: absolute; }
+
+.loginpage-header {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.loginpage-header li:first-child,
+.loginpage-header li:last-child {
+  max-height: 1px;
+  border-bottom: 1px solid #013243;
+  flex-basis: 45%;
+  text-indent: -9999px;
+}
+
+.loginpage-header li:nth-child(2) {
+  padding: 0 2%;
+  box-sizing: border-box;
+  flex-basis: 10%;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
