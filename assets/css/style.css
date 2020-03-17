@@ -166,7 +166,165 @@ header {
 /*=================================
   main styling starts here
 =================================*/
+/* login page banner styling */
+.banner{
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  z-index: 0;
+  background: url(../img/boat.jpeg) 50% 50% no-repeat;
+  background-size: cover;
+}
 
+.banner .wrapper{
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.get-started{
+  width: 50%;
+  margin: 0 25%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 78%;
+}
+
+.get-started a:first-child,
+.get-started a:nth-child(2){
+  width: 49.5%;
+  padding: 1%;
+  border: 1px solid #013243;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started a:first-child{
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #013243;
+  color: #FFF;
+}
+
+.get-started a:nth-child(2){
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: transparent;
+  color: #013243;
+  float: right;
+}
+
+.get-started a:first-child:hover { 
+  background-color: #01171F;
+  border-color: #01171F;
+}
+
+.get-started a:nth-child(2):hover{ 
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+.get-started a:active{
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.get-started > span{
+  padding: 2% 0;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.get-started > span span{ font-weight: 700; }
+
+.banner h2{
+  width: 100%;
+  height: 100%;
+  padding: 0 30%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 130px;
+  line-height: 110px;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.banner ul{
+  width: 15%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.banner ul li{
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner ul li img{
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.banner ul li figure{ overflow: hidden; }
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.overlay::before{
+  content: "\f144";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  font-size: 25px;
+  color: rgba(255,255,255,0.5);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.banner ul li:hover img{
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.banner ul li:hover .overlay::before{ color: rgba(255,255,255,0.95); }
 
 
 
