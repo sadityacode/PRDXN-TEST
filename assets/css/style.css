@@ -189,7 +189,7 @@ header {
   display: inline-block;
   position: relative;
   z-index: 2;
-  top: 78%;
+  top: 70%;
 }
 
 .get-started a:first-child,
@@ -672,6 +672,7 @@ form input{
   color: #222222;
 }
 
+/* video modal section styling */
 .video-modal{
   width: 50%;
   display: none;
@@ -722,8 +723,87 @@ form input{
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
+/* footer styling added */
+.login-page{
+  position: relative;
+}
+
+.login-page footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2% 0;
+}
+
+footer{
+  padding: 2% 0;
+}
+
+.social-icon{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.social-icon li:first-child{
+  max-height: 1px;
+  border-bottom: 1px solid #013243;
+  flex-basis: 80%;
+  text-indent: -9999px;
+}
+
+.social-icon li{
+  flex-basis: 5%;
+  text-align: center;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.youtube{
+  text-indent: -9999px;
+}
+
+.facebook::before{
+  content:"\f09a";
+}
+
+.instagram::before{
+  content:"\f16d";
+}
+
+.twitter::before{
+  content:"\f099";
+}
+
+.youtube::before{
+  content:"\f16a";
+}
+
+.facebook::before,
+.instagram::before,
+.twitter::before,
+.youtube::before{
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 20px;
+  color: #013243;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.facebook:hover::before,
+.instagram:hover::before,
+.twitter:hover::before,
+.youtube:hover::before{
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
 
 
 
