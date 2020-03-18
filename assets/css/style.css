@@ -1369,6 +1369,8 @@ footer { padding: 2% 0; }
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
+  .dropdown:hover input { width: 300px; }
   
   .banner { min-height: 400px; }
 
@@ -1387,6 +1389,8 @@ footer { padding: 2% 0; }
 
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px){
+
+  .dropdown:hover input { width: 250px; }
 
   .hamburger {
     width: 40px;
@@ -1514,11 +1518,21 @@ footer { padding: 2% 0; }
   .green { padding-right: 5%; }
 
   .video-modal { width: 100%; }
+
+  .slider div { width: 60%; }
+
+  .counters li span:first-child { font-size: 18px; }
+  
+  .counters li span:last-child { font-size: 20px; }
+
+  .to-the-top::before { font-size: 30px; }
 }
 
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
+
+  .dropdown:hover input { width: 200px; }
 
   .loginpage-header li:nth-child(2) { flex-basis: 20%; }
 
@@ -1615,6 +1629,28 @@ footer { padding: 2% 0; }
 
   .active .sign-in-form { left: 0; }
 
+  .slider div {
+    width: 90%;
+    padding: 5%;
+    left: 5%;
+  }
+
+  h3 { font-size: 20px; }
+
+  .counters li { width: 50%; }
+
+  .counters li:first-child,
+  .counters li:nth-child(2) { padding-bottom: 5%; }
+
+  .counters li span:last-child { text-align: center; }
+
+  .to-the-top::before { font-size: 20px; }
+
+  .social-icon {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+
   .facebook::before, 
   .instagram::before, 
   .twitter::before, 
@@ -1631,6 +1667,8 @@ footer { padding: 2% 0; }
 
 @media only screen and (max-width: 320px) {
 
+  .dropdown:hover input { width: 150px; }
+  
   .form-modal { width: 100%; }
 
   .form-group > span { right: 0; }
