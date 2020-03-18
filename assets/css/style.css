@@ -856,6 +856,85 @@ form input {
   }
 }
 
+/* movies page styling starts here */
+
+.welcome { display: none; }
+
+.banner-slider .wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.most-popular-slider,
+.top-rated-slider,
+.slider {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.slider li {
+  min-width: 100%;
+  height: 85vh;
+  background: url(../img/test.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slider div {
+  width: 40%;
+  padding: 2%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  color: #01171F;
+  background-color: rgba(255,255,255,0.7);
+  box-sizing: border-box;
+}
+
+.slider h2 {
+  padding-bottom: 2%;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.slider span {
+  padding-bottom: 2%;
+  display: block;
+  font-size: 15px;
+}
+
+.slider p {
+  padding-bottom: 4%;
+  font-size: 15px;
+}
+
+.read-more {
+  padding: 1% 4%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #FFF;
+  background-color: #013243;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.read-more:hover { background-color: #01171F; }
+
+.read-more:active {
+  -webkit-transform: scale(0.80);
+          transform: scale(0.80);
+}
+
 /*=================================
   main styling ends here
 =================================*/
