@@ -1149,6 +1149,122 @@ h4 + span {
 }
 /* counter most popular and top rated movies section styling ends here*/
 
+
+/* upcoming movies and now playing movies section styling starts here*/
+.upcoming-movies li,
+.now-playing-movies li {
+  position: relative;
+  cursor: pointer;
+}
+
+.upcoming-movies ul,
+.now-playing-movies ul { background-color: #000; }
+
+.upcoming-movies img,
+.now-playing-movies img {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.upcoming-movies span,
+.now-playing-movies span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #FFF;
+  background-color: rgba(1, 23, 31, 0.7);
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.upcoming-movies li:nth-child(1),
+.now-playing-movies li:nth-child(1) {
+  width: 66.65%;
+  float: left;
+}
+
+.upcoming-movies li:nth-child(2),
+.now-playing-movies li:nth-child(2),
+.upcoming-movies li:nth-child(4),
+.now-playing-movies li:nth-child(4),
+.upcoming-movies li:nth-child(6),
+.now-playing-movies li:nth-child(6) {
+  width: 33.35%;
+  float: left;
+}
+
+.upcoming-movies li:nth-child(3),
+.now-playing-movies li:nth-child(3) {
+  width: 33.35%;
+  float: right;
+}
+
+.upcoming-movies li:nth-child(5),
+.now-playing-movies li:nth-child(5) {
+  width: 66.65%;
+  float: right;
+}
+
+.upcoming-movies li figure,
+.now-playing-movies li figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.upcoming-movies li:hover span,
+.now-playing-movies li:hover span {
+  opacity: 1;
+}
+
+.upcoming-movies li:hover img,
+.now-playing-movies li:hover img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+
+.upcoming-movies,
+.now-playing-movies {
+  padding: 2% 0;
+  box-sizing: border-box;
+}
+
+.to-the-top {
+  text-indent: -9999px;
+  position: fixed;
+  bottom: 15%;
+  right: 2%;
+}
+
+.to-the-top::before {
+  content: "\f139";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 40px;
+  color: #013243;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+/* upcoming movies and now playing movies section styling ends here*/
+
 /*=================================
   main styling ends here
 =================================*/
@@ -1159,6 +1275,8 @@ h4 + span {
 
 /* footer styling added */
 .login-page { position: relative; }
+
+footer { padding: 2% 0;}
 
 .login-page footer {
   width: 100%;
