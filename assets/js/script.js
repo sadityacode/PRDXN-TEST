@@ -51,5 +51,49 @@ window.onload = function () {
       });
     });
 
+    
+    // function for switching the forms
+    switchForms.forEach(function (element) {
+      element.addEventListener("click", function () {
+        var formModal = document.querySelector(".form-modal");
+        if (element.id === "sign-in-form") {
+          formModal.classList.add("active");
+        } else { formModal.classList.remove("active"); }
+      })
+    });
+
+    // function for displaying the video modal
+    videoLi.forEach(function (element) {
+      element.addEventListener("click", function () {
+        document.querySelector(".modal").classList.add("block");
+
+        var videoModal = document.querySelector(".video-modal");
+        videoModal.classList.add("block");
+
+        var videoSource = element.getAttribute("data-video-source");
+
+        videoModal.firstElementChild.setAttribute("src", videoSource);
+      })
+    });
+
+    // function for closing the modal
+    closeModal.addEventListener("click", function () {
+      var activeModal = document.querySelector(".modal .block");
+
+      if (activeModal.classList.contains("form-modal")) {
+        document.querySelector(".form-modal").classList.remove("block");
+        document.querySelector(".form-modal").classList.remove("active");
+
+        formReset();
+      }
+      else if (activeModal.classList.contains("video-modal")) {
+        document.querySelector(".video-modal").classList.remove("block");
+        document.querySelector("video").pause();
+        document.querySelector("video").currentTime = 0;
+      }
+
+      document.querySelector(".modal").classList.remove("block");
+    })
+
   }
 }
