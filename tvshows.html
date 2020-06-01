@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en"> 
+<html lang="en" class="no-scroll">
 
 <head>
  
@@ -31,19 +31,19 @@
         <nav>
           <ul class="nav-bar">
             <li>
-              <a href="login.html" title="Movies">movies</a>
+              <a href="movies.html" title="Movies" class="movies-page">movies</a>
             </li>
             <li>
-              <a href="#FIXME" title="Tv Shows">tv shows</a>
+              <a href="tvshows.html" title="Tv Shows" class="tvshows-page">tv shows</a>
             </li>
             <li>
-              <a href="#FIXME" title="Sign Out">sign out</a>
+              <a href="#FIXME" title="Sign Out" class="sign-out">sign out</a>
             </li>
           </ul>
 
           <div class="dropdown">
             <form>
-              <input class="input-text" type="text" placeholder="SEARCH">
+              <input class="input-text" type="text">
               <button title="Search" class="search">search</button>
             </form>
             <ul>
@@ -66,19 +66,25 @@
     <!--main section start-->
     <main>
 
+      <!-- preloader division starts here -->
+      <div class="loader">
+        <span class="ring">ring</span>
+      </div>
+      <!-- preloader division ends here -->
+
       <!-- banner section starts here -->
       <section class="banner-slider">
         <div class="wrapper">
           <ul class="slider">
             <!-- for reference purpose -->
-            <li>
+            <!-- <li>
               <div>
                 <h2>star wars</h2>
                 <span>Lorem ipsum dolor sit, amet temporibus?</span>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, quasi.</p>
                 <a href="#FIXME" title="Read More" class="read-more">read more</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -90,7 +96,7 @@
           <h3>top rated tv shows</h3>
           <ul class="top-rated-slider">
             <!-- for reference purpose -->
-            <li>
+            <!-- <li>
               <figure>
                 <img src="./assets/img/test-poster.jpg" alt="Tv Show Poster">
               </figure>
@@ -106,7 +112,7 @@
                 <a class="rating">rating</a>
                 <a class="rating">rating</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -119,7 +125,7 @@
           <h3>on air tv shows</h3>
           <ul class="on-air-slider">
             <!-- for reference purpose -->
-            <li>
+            <!-- <li>
               <figure>
                 <img src="./assets/img/test-poster.jpg" alt="Tv Show Poster">
               </figure>
@@ -135,7 +141,7 @@
                 <a class="rating">rating</a>
                 <a class="rating">rating</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -145,15 +151,15 @@
       <section class="airing-today-tvshows">
         <div class="wrapper">
           <h3>tv shows airing today</h3>
-          <ul>
+          <ul class="cf">
             <!-- for reference purpose -->
-            <li>
+            <!-- <li>
               <figure>
                 <img src="./assets/img/test.jpg" alt="Tv Shows Poster">
               </figure>
               <span>star wars</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, laboriosam.</p>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -163,15 +169,15 @@
       <section class="trending-news">
         <div class="wrapper">
           <h3>trending news</h3>
-          <ul>
+          <ul class="cf">
             <!-- for reference purpose -->
-            <li>
+            <!-- <li>
               <figure>
                 <img src="./assets/img/test.jpg" alt="Tv Shows Poster">
               </figure>
               <span>star wars</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, laboriosam.</p>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -189,8 +195,6 @@
           <li><a href="#FIXME" target="_blank" class="twitter" title="Twitter">twitter</a></li>
           <li><a href="#FIXME" target="_blank" class="youtube" title="You Tube">you tube</a></li>
         </ul>
-
-        <a href="#FIXME" class="to-the-top" title="To The Top">to the top</a>
       </div>
     </footer>
     <!--footer section end-->

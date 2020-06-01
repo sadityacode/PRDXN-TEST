@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en"> 
+<html lang="en" class="no-scroll"> 
 
 <head>
  
@@ -24,7 +24,7 @@
           <li>horizontal line</li>
           <li>
             <h1>
-              <a href="index.html" title="Logo">
+              <a href="movies.html" title="Logo">
                 <img src="./assets/img/logo.png" alt="Logo">
               </a>
             </h1>
@@ -36,6 +36,11 @@
     <!--header section end-->
     <!--main section start-->
     <main>
+      <!-- preloader division starts here -->
+      <div class="loader">
+        <span class="ring">ring</span>
+      </div>
+      <!-- preloader division ends here -->
 
       <!-- banner section starts here -->
       <section class="banner">
@@ -47,13 +52,13 @@
           </div>
 
           <ul>
-            <li>
-              <figure><img src="./assets/img/avengers.jpg" alt="Avengers Trailer" data-video-source="./assets/videos/avengers.mp4"></figure>
+            <li data-video-source="./assets/videos/avengers.mp4">
+              <figure><img src="./assets/img/avengers.jpg" alt="Avengers Trailer"></figure>
               <a class="overlay">video overlay</a>
             </li>
             
-            <li>
-              <figure><img src="./assets/img/starwars.jpg" alt="Starwars Trailer" data-video-source="./assets/videos/starwars.mp4"></figure>
+            <li data-video-source="./assets/videos/starwars.mp4">
+              <figure><img src="./assets/img/starwars.jpg" alt="Starwars Trailer"></figure>
               <a class="overlay">video overlay</a>
             </li>
           </ul>
@@ -74,7 +79,7 @@
 
               <div class="form-group">
                 <label>username :</label>
-                <input  class="sign-up-name" type="text">
+                <input  class="sign-up-name" type="text" data-regex="username_regex">
                 <a class="green">green</a>
                 <a class="red">red</a>
                 <span>name must be in between 2-10 characters and it should not contain any numbers</span>
@@ -82,22 +87,22 @@
 
               <div class="form-group">
                 <label>e-mail id :</label>
-                <input  class="sign-up-email" type="text">
+                <input  class="sign-up-email" type="text" data-regex="email_regex">
                 <a class="green">green</a>
                 <a class="red">red</a>
-                <span>please enter the valid email id</span>
+                <span>please enter the valid email id or email id already exist</span>
               </div>
 
               <div class="form-group">
                 <label>password :</label>
-                <input  class="sign-up-password" type="password">
+                <input  class="sign-up-password" type="password" data-regex="password_regex">
                 <a class="green">green</a>
                 <a class="red">red</a>
                 <span>password must contain atleast one special character and number</span>
               </div>
 
               <div class="form-controls">
-                <a class="sign-up">sign up</a>
+                <a class="sign-up"  href="#FIXME">sign up</a>
               </div>
             </form>
 
@@ -108,21 +113,22 @@
 
               <div class="form-group">
                 <label>username :</label>
-                <input  class="sign-in-email" type="email">
-                <a class="green">green</a>
+                <input  class="sign-in-email" type="text"  data-regex="email_regex">
                 <a class="red">red</a>
-                <span>please enter the valid email id</span>
+                <span>please enter the valid email id or register first</span>
               </div>
 
               <div class="form-group">
                 <label>password :</label>
                 <input  class="sign-in-password" type="password">
+                <a class="red">red</a>
+                <span>password does not match</span>
               </div>
 
               <span>forget your password ?</span>
 
               <div class="form-controls">
-                <a class="sign-in">sign in</a>
+                <a class="sign-in" href="#FIXME">sign in</a>
               </div>
             </form>
 
@@ -147,7 +153,7 @@
 
         <!-- video modal html starts here -->
         <div class="video-modal">
-          <video src="./assets/videos/avengers.mp4" controls autoplay></video>
+          <video src="./assets/videos/avengers.mp4" controls autoplay ></video>
         </div>
         <!-- video modal html ends here -->
 
@@ -163,6 +169,7 @@
     <!--main section end-->
     <!--footer section start-->
     <footer>
+      <div class="wrapper">
       <ul class="social-icon">
         <li>horizontal line</li>
         <li><a href="#FIXME" target="_blank" class="facebook" title="Facebook">facebook</a></li>
@@ -170,6 +177,7 @@
         <li><a href="#FIXME" target="_blank" class="twitter" title="Twitter">twitter</a></li>
         <li><a href="#FIXME" target="_blank" class="youtube" title="You Tube">you tube</a></li>
       </ul>
+    </div>
     </footer>
     <!--footer section end-->
   </div>
