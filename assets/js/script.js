@@ -273,7 +273,30 @@ window.onload = function () {
       hamburger.classList.toggle("active-hamburger");
       document.querySelector("html").classList.toggle("no-scroll");
     })
-
     
+    // function for activating search bar when inner width is less than 1024px
+    searchFeild.nextElementSibling.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (window.innerWidth <= 1024) {
+        searchFeild.parentElement.parentElement.classList.add("active-search");
+        searchFeild.focus();
+      }
+    })
+
+    // function for deactivating search bar when it is out of focus
+    searchFeild.addEventListener("blur", function () {
+      if (searchFeild.value === "") {
+        searchFeild.parentElement.parentElement.classList.remove("active-search");
+      }
+    })
+
+    // function for logout
+    signOut.addEventListener("click", function(){
+      window.location.assign("index.html");
+    });
+
+    // function for passing values through url
+    document.querySelector(".movies-page").setAttribute("href", "movies.html?userid=" + loggedInUser + "&category=movie");
+    document.querySelector(".tvshows-page").setAttribute("href", "tvshows.html?userid=" + loggedInUser + "&category=tv");
   }
 }
