@@ -243,5 +243,37 @@ window.onload = function () {
     // for removing preloader
     removeLoader();
 
+  } else {
+
+    // some confidential information
+    var base_url = "https://api.themoviedb.org/3/";
+    var key = "b4803476184cb34c231d8f2f07da0bc7";
+    var contractual_url = "&language=en-US&page=1";
+    var trending_config = "trending";
+    var top_rated_config = "top_rated";
+    var most_popular_config = "popular";
+    var now_playing_config = "now_playing";
+    var upcoming_config = "upcoming";
+    var airing_today_config = "airing_today";
+    var on_air_config = "on_the_air";
+    var currentUrl = new URL(window.location.href);
+    var loggedInUser = currentUrl.searchParams.get("userid");
+
+    // function for preventing direct redirection on page
+    if(!loggedInUser){ window.location.assign("index.html"); }
+
+    // javascript for rest of the pages except login page 
+    var hamburger = this.document.querySelector(".hamburger");
+    var searchFeild = this.document.querySelector(".input-text");
+    var signOut = this.document.querySelector(".sign-out");
+
+    // function for activating the nav bar
+    hamburger.addEventListener("click", function () {
+      document.querySelector("nav").classList.toggle("active");
+      hamburger.classList.toggle("active-hamburger");
+      document.querySelector("html").classList.toggle("no-scroll");
+    })
+
+    
   }
 }
